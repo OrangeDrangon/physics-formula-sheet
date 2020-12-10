@@ -1,0 +1,122 @@
+\documentclass[]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+%% \section*{1D Kinematics}
+%% \begin{align}
+%%   v_f = v_0 + at \\
+%%   \Delta x = \frac{\Delta v}{2}t \\
+%%   \Delta x = v_0t + \frac{a}{2}t^2 \\
+%%   v_f^2 = v_0^2 + 2a\Delta x
+%% \end{align}
+
+%% \section*{2D Projectile}
+%% \begin{align}
+%%   t_f = \frac{2v_0\sin{(\theta)}}{g} \\
+%%   t_f = \frac{v_0\sin{(\theta)} + \sqrt{v_0^2\sin^2{(\theta)} + 2gy_0}}{g} \\
+%%   R = \frac{v_0^2 \sin{(2\theta)}}{g} \\
+%%   R = \frac{v_0\cos{(\theta)}}{g}\biggl(v_0\sin{(\theta)} + \sqrt{v_0^2\sin^2{(\theta)} + 2gy_0}\biggr) \\
+%%   R = \sin{(2\theta)}\frac{v_0^2}{2g}\biggl(1 + \sqrt{1 + \frac{2gy_0}{v_0^2\sin^2{(\theta)}}}\biggr) \\
+%%   H_{max} = y_0 + \frac{v_0^2\sin^2{(\theta)}}{2g} \\
+%%   \theta = \frac{1}{2}\arcsin{\biggl(\frac{g\Delta x}{v_0^2}\biggr)} \\
+%%   \theta = 90 - \frac{1}{2}\arcsin{\biggl(\frac{g\Delta x}{v_0^2}\biggr)} \\
+%%   \theta = \arctan{\biggl(\frac{y_f}{x_f} + \sqrt{\frac{y_f^2}{x_f^2}+1}\biggr)} \\
+%%   v_0 = \sqrt{\frac{x^2g}{x\sin{(2\theta)} - 2y\cos^2{(\theta)}}}
+%% \end{align}
+
+%% \section*{Circular Motion}
+%% \begin{align}
+%%   a_{tot} = \sqrt{a_r^2 + a_t^2} \\
+%%   \omega = \frac{2\pi}{T} \\
+%%   v = \omega r \\
+%%   a_r = \omega^2r \\
+%%   a_r = \frac{v^2}{r} \\
+%%   F_c = a_rm \\
+%%   \alpha = \frac{a_t}{r}
+%% \end{align}
+
+%% One can use all of the 1D Kinematics equations with:
+%% \begin{align*}
+%%   x = \theta \\
+%%   v_i = \omega_i \\
+%%   a = \alpha
+%% \end{align*}
+
+%% \section*{Forces}
+%% \begin{align}
+%%   \Sigma \vec{F} = m \vec{a}
+%% \end{align}
+
+%% \section*{Energy}
+%% \begin{align}
+%%   K = \frac{1}{2}mv^2 \\
+%%   K = \frac{1}{2}I\omega^2 \\
+%%   U = mgh \\
+%%   U = \frac{1}{2}kx^2 \\
+%%   U = mgy_{cm} \\
+%%   E_{th} = fs \\
+%%   W = F \cdot D = \lvert F \rvert \lvert D \rvert \cos{(\theta)} \\
+%%   F \cdot D = F_xD_x + F_yD_y ...
+%% \end{align}
+
+%% \section*{Momentum}
+%% \begin{align}
+%%   \Delta\rho = J \\
+%%   J = \int F(t)dt \\
+%%   \text{Elastic} \\
+%%   v_1 = \frac{m_1-m_2}{m_1+m_2}u_1 + \frac{2m_2}{m_1+m_2}u_2 \\
+%%   v_2 = \frac{m_1-m_2}{m_1+m_2}u_2 + \frac{2m_1}{m_1+m_2}u_1 \\
+%%   \text{Inelastic Stick} \\
+%%   v = \frac{m_1}{m_1+m_2}u_1
+%% \end{align}
+
+%% \section*{Moment of Inertia}
+%% \begin{align}
+%%   x_{cm} = \frac{\sum mx}{\sum m} \\
+%%   I = I_{cm} + Md^2 \\
+%%   I_{disk} = \frac{1}{2}mr^2 \\
+%%   I_{hoop} = mr^2 \\
+%%   I_{sphere} = \frac{2}{5}mr^2 \\
+%%   I_{sphere\_hollow} = \frac{2}{3}mr^2 \\
+%%   I_{rod\_center} = \frac{1}{12}ml^2 \\
+%%   I_{rod\_end} = \frac{1}{3}ml^2
+%% \end{align}
+
+%% \section*{Torque}
+%% \begin{align}
+%%   \tau = rF\sin{(\theta)} \\
+%%   \tau = r \times F = rF\sin{(\theta)} \\
+%%   \tau = r_{moment}F \\
+%%   \tau = I\alpha \\
+%%   P = \tau\omega
+%% \end{align}
+
+%% \section*{Angular Momentum}
+%% \begin{align}
+%%   L = \rho \times r \\
+%%   L = I\omega
+%% \end{align}
+
+%% \section*{Gravity}
+%% \begin{align}
+%%   G = 6.67 \cdot 10^{-11} \\
+%%   F_g = \frac{GMm}{r^2} \\
+%%   U = -\frac{GMm}{r} \\
+%%   K = \frac{GMm}{2r} \\
+%%   E = -\frac{GMm}{2r} \\
+%%   v_{esc} \geq \sqrt{\frac{2GM}{r}} \\
+%%   v = \sqrt{\frac{GM}{r}} \\
+%%   T = 2\pi\sqrt{\frac{a^3}{GM}}
+%% \end{align}
+
+%% \section*{Simple Harmonic Motion}
+%% \begin{align}
+%%   F = -kx \\
+%%   \omega = \sqrt{\frac{k}{m}} \\
+%%   x(t) = x_0\cos{\left (\sqrt{\frac{k}{m}}t \right)} + \frac{v_0}{\sqrt{\frac{k}{m}}}\sin{\left( \sqrt{\frac{k}{m}}t  \right)}
+%% \end{align}
+
+\end{document}
